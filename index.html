@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>MovieInfo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet icon" href="img/favicon.ico" title="Favicon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Robotto">
+
+</head>
+
+<body id="bg-img">
+
+  <div class="ptext">Search For Any Movie</div>
+  <form id="searchForm">
+    <input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+  </form>
+
+  <button id="searchMovies" onclick="myFunc()">Go Back</button>
+  <div class="container">
+    <div id="movies" class="row"></div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $("#searchMovies").hide();
+    function myFunc() {
+      location.reload();
+    }
+  </script>
+
+</body>
+
+</html>
